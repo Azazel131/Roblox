@@ -378,7 +378,7 @@ end)
     local backpack = player.Backpack
 
     for _,item in pairs(backpack:GetChildren()) do
-        if item:IsA("Tool") then
+        if item:IsA("Tool") and item.Name == "Alien Blaster, Alien Rifle, Annihilator, Beam Launcher, Biohazard, Blaster, Candy Cane Minigun, Cobra, Fiery Cannon, Flamethrower, Gatling Laser, Ghost, Golden Pistol. Golden Rifle, Halloween Staff, Hex Spitter, Invader Crossbow, M1 Garand, M16, Machine Gun, Minigun, Pistol, Platinum Gun, Pumpkin Blaster, Railgun, Rainbow Blaster, Ray Gun, Retribution Ray, Revolver, Rocket Launcher, Scope Rifle, Sniper, Space Gun, Tactical Shotgun, Techno Rifle, Thompson, Toxic, Tree Launcher, Trench Shotgun, Tri Laser, Type 100, Uzi, Venom, Viper Strike" then
             item.Parent = player.Character
         end
     end
